@@ -1,6 +1,11 @@
 GET http://localhost:3000/products
 ###
+GET http://localhost:3000/products.json
+###
 GET http://localhost:3000/products/11
+
+###
+GET http://localhost:3000/products/11.json
 
 ###
 POST http://localhost:3000/products

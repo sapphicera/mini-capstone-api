@@ -6,6 +6,9 @@ ruby "3.0.3"
 # rack-cors
 gem "rack-cors"
 
+# gem jb
+gem 'jb'
+
 # tty-table
 gem "tty-table"
 
