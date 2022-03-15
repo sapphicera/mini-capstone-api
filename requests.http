@@ -1,5 +1,36 @@
 GET http://localhost:3000/products
+###
+GET http://localhost:3000/products/1
 
 ###
+POST http://localhost:3000/products
+content-type: application/json
 
-GET http://localhost:3000/macncheese
+{
+  "name": "testname",
+  "price": 2,
+  "image_url": "testimg",
+  "description": "testdesc"
+}
+
+###
+PATCH http://localhost:3000/products/5
+content-type: application/json
+
+{
+  "name": "Dyson V11 Animal Cordless Stick Vacuum",
+  "price": 600,
+  "image_url": "http://mobileimages.lowes.com/productimages/11061d23-6373-40b1-b6e3-fc91e4f56145/10722033.jpg",
+  "description": "Engineered for whole-home, deep cleaning with suction power, run time and tools designed to deep clean your whole home. Dyson DLS™ technology automatically senses and adapts to changes in floor type to extend run time and provide the right balance of power and run time when you need it."
+}
+
+###
+PATCH http://localhost:3000/products/5
+content-type: application/json
+
+{
+  "name": "hi"
+}
+
+###
+DELETE http://localhost:3000/products/8
