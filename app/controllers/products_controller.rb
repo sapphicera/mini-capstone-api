@@ -14,8 +14,8 @@ class ProductsController < ApplicationController
       name: params[:name],
       image_url: params[:image_url],
       price: params[:price],
-      description: params[:description])
-      
+      description: params[:description],
+      stock: params[:stock])
     @product.save
     render template: "products/show"
   end
@@ -26,6 +26,7 @@ class ProductsController < ApplicationController
     @product.image_url = params[:image_url] || @product.image_url
     @product.price = params[:price] || @product.price
     @product.description = params[:description] || @product.description
+    @product.stock = params[:stock] || @product.stock
 
     @product.save
     render template: "products/show"

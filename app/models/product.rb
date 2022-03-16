@@ -8,10 +8,10 @@ class Product < ApplicationRecord
   end
 
   def tax
-    price * 0.09
+    (price * 0.09).truncate(2)
   end
 
   def total
-    price + tax
+    (price + tax).truncate(2)
   end
 end
