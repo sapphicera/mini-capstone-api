@@ -9,6 +9,9 @@ gem "rack-cors"
 # gem jb
 gem 'jb'
 
+# gem seed_dump
+gem "seed_dump"
+
 # tty-table
 gem "tty-table"
 

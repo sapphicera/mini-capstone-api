@@ -15,9 +15,14 @@ class ProductsController < ApplicationController
       image_url: params[:image_url],
       price: params[:price],
       description: params[:description],
-      stock: params[:stock])
-    @product.save
-    render template: "products/show"
+      stock: params[:stock]
+    )
+
+    if @product.save
+      render template: "products/show"
+    else
+      render json: {errors: @product.errors.full_messages}, status: 422
+    end
   end
 
   def update
@@ -28,8 +33,11 @@ class ProductsController < ApplicationController
     @product.description = params[:description] || @product.description
     @product.stock = params[:stock] || @product.stock
 
-    @product.save
-    render template: "products/show"
+    if @product.save
+      render template: "products/show"
+    else
+      render json: {errors: @product.errors.full_messages}, status: 422
+    end
   end
 
   def destroy

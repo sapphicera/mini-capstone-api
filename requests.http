@@ -1,20 +1,20 @@
 GET http://localhost:3000/products.json
 ###
-GET http://localhost:3000/products/11.json
+GET http://localhost:3000/products/10.json
 ###
 POST http://localhost:3000/products.json
 content-type: application/json
 
 {
-  "name": "testname",
-  "price": 2,
-  "image_url": "testimg",
-  "description": "testdesc",
+  "name": "nameista",
+  "price": 200,
+  "image_url": "weeee",
+  "description": "hellaur this is valid i think",
   "stock": 2
 }
 
 ###
-PATCH http://localhost:3000/products/17.json
+PATCH http://localhost:3000/products/12.json
 content-type: application/json
 
 {
@@ -26,4 +26,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/products/15
+DELETE http://localhost:3000/products/11

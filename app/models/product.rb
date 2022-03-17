@@ -1,4 +1,11 @@
 class Product < ApplicationRecord
+
+  validates :name, uniqueness: true, presence: true
+  validates :price, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validates :description, length: { within: 10..500 }
+
+  
+
   def friendly_updated_at
     updated_at.strftime("%A, %d %b %Y %l:%M %p")
   end
