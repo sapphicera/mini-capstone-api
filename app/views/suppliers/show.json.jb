@@ -3,6 +3,7 @@
   name: @supplier.name,
   email: @supplier.email,
   phone: @supplier.phone,
+  products: @supplier.products,
   created_at: @supplier.created_at,
   updated_at: @supplier.updated_at
 }

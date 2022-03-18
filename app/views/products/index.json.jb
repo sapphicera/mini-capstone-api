@@ -11,6 +11,7 @@
     stock: product.stock,
     is_discounted?: product.is_discounted?,
     tax: product.tax,
-    total: product.total
+    total: product.total,
+    supplier: product.supplier
   }
 end
