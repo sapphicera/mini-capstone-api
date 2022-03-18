@@ -2,7 +2,7 @@
 
 GET http://localhost:3000/products.json
 ###
-GET http://localhost:3000/products/10.json
+GET http://localhost:3000/products/1.json
 ###
 POST http://localhost:3000/products.json
 content-type: application/json
@@ -10,19 +10,18 @@ content-type: application/json
 {
   "name": "p",
   "price": 10,
-  "image_url": "weeee",
   "description": "hellaur this is valid i think",
-  "stock": 2
+  "stock": 2,
+  "supplier_id": 3
 }
 
 ###
-PATCH http://localhost:3000/products/16.json
+PATCH http://localhost:3000/products/17.json
 content-type: application/json
 
 {
-  "name": "hi",
-  "price": 599.99,
-  "image_url": "http://mobileimages.lowes.com/productimages/11061d23-6373-40b1-b6e3-fc91e4f56145/10722033.jpg",
+  "name": "squeaked",
+  "price": 599,
   "description": "Engineered for whole-home, deep cleaning with suction power, run time and tools designed to deep clean your whole home. Dyson DLS™ technology automatically senses and adapts to changes in floor type to extend run time and provide the right balance of power and run time when you need it.",
   "stock": 3
 }
@@ -44,7 +43,7 @@ content-type: application/json
 }
 
 ###
-PATCH http://localhost:3000/suppliers/5.json
+PATCH http://localhost:3000/suppliers/9.json
 content-type: application/json
 
 {
@@ -53,4 +52,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/suppliers/7
+DELETE http://localhost:3000/suppliers/9

@@ -12,10 +12,10 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(
       name: params[:name],
-      image_url: params[:image_url],
       price: params[:price],
       description: params[:description],
-      stock: params[:stock]
+      stock: params[:stock],
+      supplier_id: params[:supplier_id]
     )
 
     if @product.save
@@ -28,9 +28,9 @@ class ProductsController < ApplicationController
   def update
     @product = Product.find_by(id: params[:id])
     @product.name = params[:name] || @product.name
-    @product.image_url = params[:image_url] || @product.image_url
     @product.price = params[:price] || @product.price
     @product.description = params[:description] || @product.description
+    @product.supplier_id = params[:supplier] || @product.supplier_id
     @product.stock = params[:stock] || @product.stock
 
     if @product.save

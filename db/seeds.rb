@@ -1,8 +1,14 @@
-Supplier.create!([
-  {name: "Example 1", email: "Example@One.com", phone: "1011011001"},
-  {name: "Example 2", email: "Example@Two.com", phone: "2022022002"},
-  {name: "Example 3", email: "Example@Three.com", phone: "3033033003"},
-])
+# Image.create!([
+#   {url: "http://image.com/febreeze", product_id: 1},
+#   {url: "http://image.com/macncheese", product_id: 2},
+#   {url: "http://image.com/kitkat", product_id: 3}
+# ])
+
+# Supplier.create!([
+#   {name: "Example 1", email: "Example@One.com", phone: "1011011001"},
+#   {name: "Example 2", email: "Example@Two.com", phone: "2022022002"},
+#   {name: "Example 3", email: "Example@Three.com", phone: "3033033003"},
+# ])
 
 # Product.create!([
 #   {name: "Febreze Blossom & Breeze Vaporizador 300 Ml", price: "7.99", image_url: "https://m.media-amazon.com/images/I/418BiWuRVUL._AC_SX679_.jpg", description: "Febreze AIR doesn't just mask odors, it cleans away odors with OdorClear Technology, leaving your air with a light, fresh scent. So when something stinky gets in your way, reach for Febreze AIR to eliminate odors on the spot.", stock: 16},
