@@ -6,15 +6,15 @@ POST http://localhost:3000/products.json
 content-type: application/json
 
 {
-  "name": "nameista",
-  "price": 200,
+  "name": "p",
+  "price": 10,
   "image_url": "weeee",
   "description": "hellaur this is valid i think",
   "stock": 2
 }
 
 ###
-PATCH http://localhost:3000/products/12.json
+PATCH http://localhost:3000/products/16.json
 content-type: application/json
 
 {
@@ -26,4 +26,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/products/11
+DELETE http://localhost:3000/products/16

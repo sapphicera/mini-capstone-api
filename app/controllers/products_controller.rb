@@ -43,7 +43,12 @@ class ProductsController < ApplicationController
   def destroy
     product = Product.find_by(id: params[:id])
 
-    Product.exists?(params[:id]) ? (product.destroy; message = "product deleted") : (message = "doesn't exist")
+    if Product.exists?(params[:id])
+      product.destroy
+      message = "product deleted"
+    else
+      message = "doesn't exist"
+    end
 
     render json: {message: message}
   end
