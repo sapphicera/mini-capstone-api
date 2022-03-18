@@ -1,3 +1,5 @@
+###### PRODUCT REQUESTS #####
+
 GET http://localhost:3000/products.json
 ###
 GET http://localhost:3000/products/10.json
@@ -28,13 +30,13 @@ content-type: application/json
 ###
 DELETE http://localhost:3000/products/16
 
-######
+###### SUPPlIER REQUESTS #####
 
-GET http://localhost:3000/suppliers
+GET http://localhost:3000/suppliers.json
 ###
-GET http://localhost:3000/suppliers/4
+GET http://localhost:3000/suppliers/1.json
 ###
-POST http://localhost:3000/suppliers
+POST http://localhost:3000/suppliers.json
 content-type: application/json
 
 {
@@ -42,7 +44,7 @@ content-type: application/json
 }
 
 ###
-PATCH http://localhost:3000/suppliers/4
+PATCH http://localhost:3000/suppliers/5.json
 content-type: application/json
 
 {
@@ -51,4 +53,4 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/suppliers/4
+DELETE http://localhost:3000/suppliers/7

@@ -1,32 +1,32 @@
 class SuppliersController < ApplicationController
   def index
-    suppliers = Supplier.all
-    render json: {message: suppliers}
+    @suppliers = Supplier.all
+    render template: "suppliers/index"
   end
 
   def show
-    supplier = Supplier.find_by(id: params[:id])
-    render json: {message: supplier}
+    @supplier = Supplier.find_by(id: params[:id])
+    render template: "suppliers/show"
   end
 
   def create
-    supplier = Supplier.new(
+    @supplier = Supplier.new(
       name: params[:name],
       email: params[:email],
       phone: params[:phone]
     )
-    supplier.save
-    render json: {message: "created!"}
+    @supplier.save
+    render template: "suppliers/show"
   end
 
   def update
-    supplier = Supplier.find_by(id: params[:id])
-    supplier.name = params[:name] || supplier.name
-    supplier.email = params[:email] || supplier.email
-    supplier.phone = params[:phone] || supplier.phone
-    supplier.save
+    @supplier = Supplier.find_by(id: params[:id])
+    @supplier.name = params[:name] || @supplier.name
+    @supplier.email = params[:email] || @supplier.email
+    @supplier.phone = params[:phone] || @supplier.phone
+    @supplier.save
 
-    render json: {message: "saved!"}
+    render template: "suppliers/show"
   end
 
   def destroy
