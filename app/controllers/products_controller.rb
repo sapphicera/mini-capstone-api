@@ -19,6 +19,7 @@ class ProductsController < ApplicationController
     )
 
     if @product.save
+      params[:input_images].each{|image| Image.create(url: image, product_id: @product.id)}
       render template: "products/show"
     else
       render json: {errors: @product.errors.full_messages}, status: 422

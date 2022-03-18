@@ -2,21 +2,22 @@
 
 GET http://localhost:3000/products.json
 ###
-GET http://localhost:3000/products/1.json
+GET http://localhost:3000/products/21.json
 ###
 POST http://localhost:3000/products.json
 content-type: application/json
 
 {
-  "name": "p",
-  "price": 10,
-  "description": "hellaur this is valid i think",
-  "stock": 2,
-  "supplier_id": 3
+  "name": "a bwand new kwitkwat",
+  "price": 3,
+  "description": "ahhhhhh i dont think this will work lol",
+  "stock": 27,
+  "supplier_id": 3,
+  "input_images": ["https://cdn.shopify.com/s/files/1/1083/2612/products/JapaneseKitKat_Hojicha_Tabling_1200x1200.jpg", "https://cdn.shopify.com/s/files/1/1083/2612/products/JapaneseKitKat_Hojicha_Tabling_1200x1200.jpg"]
 }
 
 ###
-PATCH http://localhost:3000/products/17.json
+PATCH http://localhost:3000/products/22.json
 content-type: application/json
 
 {
@@ -27,7 +28,7 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/products/16
+DELETE http://localhost:3000/products/21
 
 ###### SUPPlIER REQUESTS #####
 
