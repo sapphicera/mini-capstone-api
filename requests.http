@@ -1,6 +1,7 @@
 ###### PRODUCT REQUESTS #####
 
 GET http://localhost:3000/products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzMxNzZ9.GhiyAJhimYxwK9oeyxk2kSBWCHeKfimBELJXcgN_3Jc
 ###
 GET http://localhost:3000/products/21.json
 ###
@@ -66,4 +67,13 @@ Content-Type: application/json
   "email": "tactician@grams.com",
   "password": "sandalphonluvr2",
   "password_confirmation": "sandalphonluvr2"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "tactician@grams.com",
+  "password": "sandalphonluvr2"
 }
