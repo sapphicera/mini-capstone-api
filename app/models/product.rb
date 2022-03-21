@@ -3,6 +3,7 @@ class Product < ApplicationRecord
   validates :price, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
   validates :description, length: { within: 10..500 }
 
+  belongs_to :user
   belongs_to :supplier
   has_many :images
 

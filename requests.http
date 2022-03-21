@@ -1,15 +1,16 @@
 ###### PRODUCT REQUESTS #####
 
 GET http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzMxNzZ9.GhiyAJhimYxwK9oeyxk2kSBWCHeKfimBELJXcgN_3Jc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzQ3MjN9.HXc0squic8mDp7aMGVP2grNwnv14KZ96VRPeC_6o-14
 ###
 GET http://localhost:3000/products/21.json
 ###
 POST http://localhost:3000/products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzQ3MjN9.HXc0squic8mDp7aMGVP2grNwnv14KZ96VRPeC_6o-14
 content-type: application/json
 
 {
-  "name": "a bwand new kwitkwat",
+  "name": "omega squeaker",
   "price": 3,
   "description": "ahhhhhh i dont think this will work lol",
   "stock": 27,

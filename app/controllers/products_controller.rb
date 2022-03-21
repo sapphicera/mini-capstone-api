@@ -3,8 +3,9 @@ class ProductsController < ApplicationController
     pp "current_user"
     pp current_user
     pp "/current_user"
-    
-    @products = Product.all
+
+    @products = current_user.products
+    # @products = Product.all
     render template: "products/index"
   end
 
@@ -19,7 +20,8 @@ class ProductsController < ApplicationController
       price: params[:price],
       description: params[:description],
       stock: params[:stock],
-      supplier_id: params[:supplier_id]
+      supplier_id: params[:supplier_id],
+      user_id: current_user.id
     )
 
     if @product.save
