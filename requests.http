@@ -86,7 +86,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgwNTU2M
 Content-Type: application/json
 
 {
-  "product_id": 24,
+  "product_id": 17,
   "quantity": 6
 }
 
