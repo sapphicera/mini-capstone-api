@@ -6,7 +6,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzQ3M
 GET http://localhost:3000/products/21.json
 ###
 POST http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzQ3MjN9.HXc0squic8mDp7aMGVP2grNwnv14KZ96VRPeC_6o-14
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDA0NTl9.C7ntfLjgvIudSGASCb21r-Gd7tmdFosm0sQ5ccfOvC4
 content-type: application/json
 
 {
