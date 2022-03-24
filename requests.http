@@ -3,14 +3,14 @@
 GET http://localhost:3000/products.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzQ3MjN9.HXc0squic8mDp7aMGVP2grNwnv14KZ96VRPeC_6o-14
 ###
-GET http://localhost:3000/products/21.json
+GET http://localhost:3000/products/22.json
 ###
 POST http://localhost:3000/products.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDA0NTl9.C7ntfLjgvIudSGASCb21r-Gd7tmdFosm0sQ5ccfOvC4
 content-type: application/json
 
 {
-  "name": "omega squeaker",
+  "name": "omega squeaker 22",
   "price": 3,
   "description": "ahhhhhh i dont think this will work lol",
   "stock": 27,
@@ -19,18 +19,20 @@ content-type: application/json
 }
 
 ###
-PATCH http://localhost:3000/products/22.json
+PATCH http://localhost:3000/products/24.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDA0NTl9.C7ntfLjgvIudSGASCb21r-Gd7tmdFosm0sQ5ccfOvC4
 content-type: application/json
 
 {
-  "name": "squeaked",
+  "name": "squeakalina",
   "price": 599,
   "description": "Engineered for whole-home, deep cleaning with suction power, run time and tools designed to deep clean your whole home. Dyson DLS™ technology automatically senses and adapts to changes in floor type to extend run time and provide the right balance of power and run time when you need it.",
   "stock": 3
 }
 
 ###
-DELETE http://localhost:3000/products/21
+DELETE http://localhost:3000/products/22
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDA0NTl9.C7ntfLjgvIudSGASCb21r-Gd7tmdFosm0sQ5ccfOvC4
 
 ###### SUPPlIER REQUESTS #####
 

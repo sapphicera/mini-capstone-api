@@ -6,12 +6,17 @@ class Product < ApplicationRecord
   belongs_to :user
   belongs_to :supplier
   has_many :images
+  
+  has_many :category_products
+  has_many :categories, through: :category_products
 
-  # def supplier
-  #   # Supplier.find_by(id: supplier_id)
-  #   found_supplier = Supplier.find_by(id: supplier_id)
-  #   found_supplier.except(:created_at, :updated_at)
-  # end
+  def categories
+    categories = []
+    category_products.each do |cp|
+      categories << cp.category
+    end
+    categories
+  end
 
   def friendly_updated_at
     updated_at.strftime("%A, %d %b %Y %l:%M %p")
