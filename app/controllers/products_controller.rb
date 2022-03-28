@@ -2,9 +2,9 @@ class ProductsController < ApplicationController
   before_action :authenticate_admin, only: [:create, :update, :destroy]
 
   def index
-    category = Category.find_by(name: params[:category])
-    @products = category.products
-    # @products = Product.all
+    # category = Category.find_by(name: params[:category])
+    # @products = category.products
+    @products = Product.all
     render template: "products/index"
   end
 

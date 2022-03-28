@@ -3,7 +3,6 @@
 ###
 GET http://localhost:3000/products.json?category=Food
 ###
-
 GET http://localhost:3000/products.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzQ3MjN9.HXc0squic8mDp7aMGVP2grNwnv14KZ96VRPeC_6o-14
 ###
@@ -88,28 +87,28 @@ Content-Type: application/json
 ### Orders Create
 
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgwNTU2MjN9.4xvZlNWKoQFTnOxQQ1p7jJWh9jVYOR0cp1dtwf6w6gw
-Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1Nzc5OTB9.uzVT_gfkGhfnbl7H-cfoiu2JIyRCew2zUFyk0s9j3Qk
+# Content-Type: application/json
 
-{
-  "product_id": 17,
-  "quantity": 6
-}
+# {
+#   "product_id": 17,
+#   "quantity": 6
+# }
 
 ### Orders Show
 
 GET http://localhost:3000/orders/5.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgwNjEyOTF9.-3PWhinCNfQDtoH6B1wof28gGFpPVbUHouR2a6owx6Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1NzA0MjB9.O6PwzOLQTDJltV1wVyccwi3m9hAf3r3hLwnPm1YGJXc
 
 ### Orders Index
 
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgwNjEyOTF9.-3PWhinCNfQDtoH6B1wof28gGFpPVbUHouR2a6owx6Y
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1Nzc5OTB9.uzVT_gfkGhfnbl7H-cfoiu2JIyRCew2zUFyk0s9j3Qk
 
-###
+### CP Create Product
 
 POST http://localhost:3000/carted_products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgzMjAxMzd9.RpVCmXpxwwSt9xXEYNP1-YjGj-9U59XHAky7CKha9_Q
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1Nzc5OTB9.uzVT_gfkGhfnbl7H-cfoiu2JIyRCew2zUFyk0s9j3Qk
 Content-Type: application/json
 
 {
@@ -117,20 +116,20 @@ Content-Type: application/json
   "quantity": 4
 }
 
-###
+### CP View Products
 
 GET http://localhost:3000/carted_products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1NzA0MjB9.O6PwzOLQTDJltV1wVyccwi3m9hAf3r3hLwnPm1YGJXc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1Nzc5OTB9.uzVT_gfkGhfnbl7H-cfoiu2JIyRCew2zUFyk0s9j3Qk
 
-###
+### CP Update Product
 
 PATCH http://localhost:3000/carted_products/9.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1NzA0MjB9.O6PwzOLQTDJltV1wVyccwi3m9hAf3r3hLwnPm1YGJXc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1Nzc5OTB9.uzVT_gfkGhfnbl7H-cfoiu2JIyRCew2zUFyk0s9j3Qk
 Content-Type: application/json
 
 {
-  "quantity": 6
+  "quantity": 10
 }
-###
+### CP Delete Product
 DELETE http://localhost:3000/carted_products/9
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1NzA0MjB9.O6PwzOLQTDJltV1wVyccwi3m9hAf3r3hLwnPm1YGJXc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1Nzc5OTB9.uzVT_gfkGhfnbl7H-cfoiu2JIyRCew2zUFyk0s9j3Qk
