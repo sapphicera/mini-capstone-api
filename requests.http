@@ -9,7 +9,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzQ3M
 GET http://localhost:3000/products/22.json
 ###
 POST http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDA0NTl9.C7ntfLjgvIudSGASCb21r-Gd7tmdFosm0sQ5ccfOvC4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDk4NzQ2ODd9.rcPpEhb9hZYcr7f8yjBbEfQmntbspThKd1baRQ_Mm-k
 content-type: application/json
 
 {
@@ -23,19 +23,20 @@ content-type: application/json
 
 ###
 PATCH http://localhost:3000/products/24.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDA0NTl9.C7ntfLjgvIudSGASCb21r-Gd7tmdFosm0sQ5ccfOvC4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDk4NzQ4NzJ9.s9k3ap3bSPhY7MjwEn-IcEdMiN769xspcFEhskfSuIw
 content-type: application/json
 
 {
-  "name": "squeakalina",
+  "name": "squeakalinadsfdf",
   "price": 599,
   "description": "Engineered for whole-home, deep cleaning with suction power, run time and tools designed to deep clean your whole home. Dyson DLS™ technology automatically senses and adapts to changes in floor type to extend run time and provide the right balance of power and run time when you need it.",
-  "stock": 3
+  "stock": 3,
+  "supplier_id": 1
 }
 
 ###
-DELETE http://localhost:3000/products/22
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDA0NTl9.C7ntfLjgvIudSGASCb21r-Gd7tmdFosm0sQ5ccfOvC4
+DELETE http://localhost:3000/products/25
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDk4NzQ4NzJ9.s9k3ap3bSPhY7MjwEn-IcEdMiN769xspcFEhskfSuIw
 
 ###### SUPPlIER REQUESTS #####
 

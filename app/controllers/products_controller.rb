@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :authenticate_admin, only: [:create, :update, :destroy]
+  # before_action :authenticate_admin, only: [:create, :update, :destroy]
 
   def index
     # category = Category.find_by(name: params[:category])
@@ -24,7 +24,7 @@ class ProductsController < ApplicationController
     )
 
     if @product.save
-      params[:input_images].each{|image| Image.create(url: image, product_id: @product.id)}
+      # params[:input_images].each{|image| Image.create(url: image, product_id: @product.id)}
       render template: "products/show"
     else
       render json: {errors: @product.errors.full_messages}, status: 422
@@ -36,7 +36,7 @@ class ProductsController < ApplicationController
     @product.name = params[:name] || @product.name
     @product.price = params[:price] || @product.price
     @product.description = params[:description] || @product.description
-    @product.supplier_id = params[:supplier] || @product.supplier_id
+    @product.supplier_id = params[:supplier_id] || @product.supplier_id
     @product.stock = params[:stock] || @product.stock
 
     if @product.save
