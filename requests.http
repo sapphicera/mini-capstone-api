@@ -22,7 +22,7 @@ content-type: application/json
 }
 
 ###
-PATCH http://localhost:3000/products/24.json
+PATCH http://localhost:3000/products/28.json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDk4NzQ4NzJ9.s9k3ap3bSPhY7MjwEn-IcEdMiN769xspcFEhskfSuIw
 content-type: application/json
 
@@ -134,3 +134,7 @@ Content-Type: application/json
 ### CP Delete Product
 DELETE http://localhost:3000/carted_products/9
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1Nzc5OTB9.uzVT_gfkGhfnbl7H-cfoiu2JIyRCew2zUFyk0s9j3Qk
+
+###
+
+GET http://localhost:3000/suppliers.json

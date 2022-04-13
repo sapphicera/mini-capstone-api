@@ -8,6 +8,7 @@
   tax: @product.tax,
   total: @product.total,
   supplier: @product.supplier,
+  all_suppliers: Supplier.all,
   images: @product.images,
   friendly_updated_at: @product.friendly_updated_at,
   created_at: @product.created_at,
