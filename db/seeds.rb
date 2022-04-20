@@ -1,9 +1,9 @@
-User.create!([
-  {name: "Test name", email: "test@test.com", password_digest: "$2a$12$RC2hDnWtyCfo1tLEKTsAjezZGpBuNgaLIDY4gLRr0sCCBoiuZb3h2", admin: false},
-  {name: "regina", email: "tactician@grams.com", password_digest: "$2a$12$0YGtvMlVZLI.wiEoOJ9BbuLCIkIXnJxgZCUSbUbkTB3.Sdni4Axqe", admin: true},
-  {name: "Sandalphon", email: "archangel@grams.com", password_digest: "$2a$12$GzWUC4wAbjD2BX714kqej.YlxDWkesijlDuCoHIvBhGqi0DxEJixG", admin: false},
-  {name: "mascula", email: "blue@tooth.com", password_digest: "$2a$12$u8tTu8sB5zUnZQfqPO8aL.YYmzAZ6w9AM.uJBrZLGMrRDGUzM2Jey", admin: false}
-])
+# User.create!([
+#   {name: "Test name", email: "test@test.com", password_digest: "$2a$12$RC2hDnWtyCfo1tLEKTsAjezZGpBuNgaLIDY4gLRr0sCCBoiuZb3h2", admin: false},
+#   {name: "regina", email: "tactician@grams.com", password_digest: "$2a$12$0YGtvMlVZLI.wiEoOJ9BbuLCIkIXnJxgZCUSbUbkTB3.Sdni4Axqe", admin: true},
+#   {name: "Sandalphon", email: "archangel@grams.com", password_digest: "$2a$12$GzWUC4wAbjD2BX714kqej.YlxDWkesijlDuCoHIvBhGqi0DxEJixG", admin: false},
+#   {name: "mascula", email: "blue@tooth.com", password_digest: "$2a$12$u8tTu8sB5zUnZQfqPO8aL.YYmzAZ6w9AM.uJBrZLGMrRDGUzM2Jey", admin: false}
+# ])
 Category.create!([
   {name: "Food"},
   {name: "Electronics"}
