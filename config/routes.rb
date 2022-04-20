@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get "/products/:id" => "products#show" # show product
   post "/products" => "products#create" # make new product
   patch "/products/:id" => "products#update" # update product
-  delete "/products/:id" => "products#destroy" # destroy product
+  delete "/products/multidelete" => "products#multidelete"
+  delete "/products/:id" => "products#destroy" # destroy products
 
   get "/suppliers" => "suppliers#index" # show all suppliers
   get "/suppliers/:id" => "suppliers#show" # show supplier

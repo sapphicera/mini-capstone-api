@@ -138,3 +138,19 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDg1Nzc5O
 ###
 
 GET http://localhost:3000/suppliers.json
+
+###
+
+GET http://localhost:3000/products.json?simple=true
+
+###
+
+DELETE http://localhost:3000/products/multidelete.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTAzODg2Njd9.Dwm9j8KkZ32V9Kxq6ZrX_wi5tl0sm3jEDRrICV1-YWU
+
+{
+  "products": [
+    "rewrwr",
+    "finnyrenes"
+  ]
+}

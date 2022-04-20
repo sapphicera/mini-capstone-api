@@ -5,7 +5,12 @@ class ProductsController < ApplicationController
     # category = Category.find_by(name: params[:category])
     # @products = category.products
     @products = Product.all
-    render template: "products/index"
+
+    if params[:simple]
+      render template: "products/simple_index"
+    else
+      render template: "products/index"
+    end
   end
 
   def show
@@ -57,6 +62,14 @@ class ProductsController < ApplicationController
     end
 
     render json: {message: message}
+  end
+
+  def multidelete
+    params[:products].each do |product_name|
+      product = Product.find_by(name: product_name)
+      product.destroy
+    end
+    render json: {message: "in multidelete"}
   end
 
   # def query_display_id
