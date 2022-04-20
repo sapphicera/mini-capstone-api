@@ -4,10 +4,6 @@ User.create!([
   {name: "Sandalphon", email: "archangel@grams.com", password_digest: "$2a$12$GzWUC4wAbjD2BX714kqej.YlxDWkesijlDuCoHIvBhGqi0DxEJixG", admin: false},
   {name: "mascula", email: "blue@tooth.com", password_digest: "$2a$12$u8tTu8sB5zUnZQfqPO8aL.YYmzAZ6w9AM.uJBrZLGMrRDGUzM2Jey", admin: false}
 ])
-Category.create!([
-  {name: "Food"},
-  {name: "Electronics"}
-])
 Supplier.create!([
   {name: "Example 1", email: "Example@One.com", phone: "1011011001"},
   {name: "Example 2", email: "Example@Two.com", phone: "2022022002"},
@@ -27,6 +23,10 @@ Product.create!([
   {name: "Roomba", price: "299", description: "Roomba is a series of autonomous robotic vacuum cleaners sold by iRobot. Introduced in September 2002, they have a set of sensors that enable them to navigate the floor area of a home. These sensors can detect the presence of obstacles, particularly dirty spots on the floor, and steep drops (e.g. to avoid falling down stairs).", stock: 3, supplier_id: 1, user_id: 1},
   {name: "rewrwr", price: "33444", description: "fdsfskfsmfksfmkskmf", stock: 22, supplier_id: 1, user_id: 1},
   {name: "finnyrenes", price: "20202", description: "kjdsfndjsnfjsdnfksdnf", stock: 20, supplier_id: 1, user_id: 1}
+])
+Category.create!([
+  {name: "Food"},
+  {name: "Electronics"}
 ])
 Image.create!([
   {url: "http://image.com/macncheese", product_id: 2},
