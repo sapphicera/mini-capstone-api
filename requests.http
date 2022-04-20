@@ -3,8 +3,8 @@
 ###
 GET http://localhost:3000/products.json?category=Food
 ###
-GET http://localhost:3000/products.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDc5NzQ3MjN9.HXc0squic8mDp7aMGVP2grNwnv14KZ96VRPeC_6o-14
+GET https://blooming-stream-66564.herokuapp.com/products.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTA1NjcxNTZ9.KNooSWIwBYeuXUU2-cpeiLoRx1MDcHBELOL7B0Dt8eM
 ###
 GET http://localhost:3000/products/22.json
 ###
