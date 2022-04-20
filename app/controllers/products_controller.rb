@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  # before_action :authenticate_admin, only: [:create, :update, :destroy]
+  before_action :authenticate_admin, only: [:create, :update, :destroy]
 
   def index
     # category = Category.find_by(name: params[:category])
